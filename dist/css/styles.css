@@ -1,0 +1,18 @@
+@keyframes example {
+  0% {
+    transform: scale(.9);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.slider {
+  width: 84%;
+  margin: 100px auto;
+}
+
+body {
+  font-family: Roboto,Helvetica,Arial,Lucida,sans-serif;
+}
