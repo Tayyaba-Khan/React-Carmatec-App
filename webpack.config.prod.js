@@ -1,50 +1,49 @@
-var path = require('path')
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-const glob = require('glob-all')
-var PurifyCSSPlugin= require('purifycss-webpack'); 
+// var path = require("path");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: [
-    './src/js/index.jsx',
-    './src/css/styles.scss'
-  ],
+  entry: [`${__dirname}/src/js/index.jsx`, `${__dirname}/src/css/styles.scss`],
   output: {
     path: `${__dirname}/dist/js`,
-    filename: 'bundle.js',
+    filename: "bundle.js"
   },
-
-  //watch: true,
-
+  watch: true,
   module: {
     rules: [
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env', 'react'],
-            plugins: ["transform-object-rest-spread", "transform-class-properties"]
-          }
-        }
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['env'],
-            plugins: ["transform-object-rest-spread", "transform-class-properties"]
+            presets: ["env"],
+            plugins: [
+              "transform-object-rest-spread",
+              "transform-class-properties"
+            ]
           }
         }
       },
       {
-        test:/\.css$/,
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["react", "env"],
+            plugins: [
+              "transform-object-rest-spread",
+              "transform-class-properties"
+            ]
+          }
+        }
+      },
+      {
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: [ 
+          use: [
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
                 url: false
               }
@@ -53,35 +52,52 @@ module.exports = {
         })
       },
       {
-        test:/\.scss$/,
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          use: [ 
+          use: [
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
                 url: false
               }
             },
-            'sass-loader'
+            "sass-loader"
           ]
         })
       }
+      // {
+      //  test: /\.scss$/,
+      //  use: [
+      //    "style-loader",
+      //    {
+      //      loader: "css-loader",
+      //      options: {
+      //        url: false
+      //      }
+      //    },
+      //    "sass-loader"
+      //  ]
+      // },
+      // {
+      //  test: /\.css$/,
+      //  use: [
+      //    "style-loader",
+      //    {
+      //      loader: "css-loader",
+      //      options: {
+      //        url: false
+      //      }
+      //    }
+      //  ]
+      // }
     ]
   },
-
-  resolve: {
-    extensions:['.js', '.jsx']
-  },
+  devtool: "source-map",
+  resolve: { extensions: [".js", ".jsx"] },
 
   plugins: [
     new ExtractTextPlugin({
-      filename: '../css/styles.css'
-    }),
-    new PurifyCSSPlugin({
-      paths: glob.sync([
-        path.join(__dirname, 'dist/index.html'),
-        path.join(__dirname, 'src/js/*.js')
-      ])
+      filename: "../css/styles.css"
     })
   ]
 };
