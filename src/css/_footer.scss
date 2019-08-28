@@ -1,0 +1,19 @@
+.mainFooter{
+    background-color: #1d1d1d;
+}
+.hoursImg{
+    height: 100px;
+    width:100px;
+    background-color: #1d1d1d;
+    position: absolute;
+    top: -40px;
+    left: 46%;
+    border-radius: 20px;
+}
+.tooltip-inner{
+    background-color: #fff;
+    color: #1d1d1d;
+}
+.arrow::after,.arrow::before{
+    border-top-color: white !important;
+}

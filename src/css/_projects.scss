@@ -1,0 +1,38 @@
+.proImgOne:hover{
+    background-color: #613c8d;
+}
+.proIstBtn{
+    outline: #613c8d;
+    // color: #613c8d;
+}
+.proImg{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform cubic-bezier(0.39, 0.575, 0.565, 1);
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(102,44,146,.8);
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        h2,h3{
+            position: relative;
+            top: 40%;
+        }
+        p{
+            position: relative;
+            top: 39%;
+        }
+    }
+}
+.proImg:hover .proInnerImg{
+    transform: scale(1.5);
+}
+.proImg:hover .overlay{
+    opacity: 1;
+}

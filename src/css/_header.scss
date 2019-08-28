@@ -1,0 +1,45 @@
+.mainHeader{
+    background-color: #5d257e;
+    .container{
+        .headerFirstRow{
+            .hdFirstRowIstCol{
+                color:#fff;
+                font-size: 11px;
+                font-weight: bold;
+                .hdFirstRowIstCollisting{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        padding: 5px;
+                        margin-right: 14px;
+                        float: left;
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            i{
+                                padding-right: 5px;
+                            }
+                        }
+                        a:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+            .hdFirstRowSecCol{
+                color:#fff;
+                font-size: 12px;
+                font-weight: bold;
+                a{
+                    padding: 3px;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                a:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

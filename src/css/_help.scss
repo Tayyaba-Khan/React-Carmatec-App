@@ -1,0 +1,78 @@
+.mainHelp{
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.polygonCol{
+    height: 540px;
+    // border: 1px solid #000;
+  .polygonTwo{
+      position: relative;
+      left: 14.5%;
+      top: -18.5%;
+  }
+  .polygonThree{
+        position: relative;
+        left: -14.4%;
+        top: -53%;
+    }
+    .polygonFour{
+        position: relative;
+        left: 14.5%;
+        top: -54%;
+    }
+    .polygonFive{
+        position: relative;
+        left: -14.5%;
+        top: -88.5%;
+    }
+    .polygonSix{
+        position: relative;
+        // left: -14.5%;
+        top: -106.5%;
+    }
+}
+
+.polyIcon{
+    position: absolute;
+    left: 46%;
+    top: 50px;
+}
+.polygonDataOne{
+    position: absolute;
+    top:-3%;
+    left: 45.5%;
+}
+.polygonDataTwo{
+    position: absolute;
+    top:45%;
+    left: 59.5%;
+}
+.polygonDataThree{
+    position: absolute;
+    top:39%;
+    left: 30%;
+}
+.polygonDataFour{
+    position: absolute;
+    top:44%;
+    left: 59.5%;
+}
+.polygonDataFive{
+    position: absolute;
+    top:39%;
+    left: 32%;
+}
+.polygonDataSix{
+    position: absolute;
+    top:99%;
+    left: 47.2%;
+}
+.polygonImg{
+
+}
+
+
+.polygonImg:hover{
+    // background-color: #B27EFF;
+    // background-color: linear-gradient(left bottom,#B27EFF,#2E63C5);
+}

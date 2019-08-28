@@ -1,0 +1,23 @@
+.mainViews{
+    // height: 500px;
+    // position: relative;
+    // background-image: url("../images/land.jpeg");
+    // background-size: 100% 100%;
+    // background-position: 100% 100%;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-color: #B27EFF;
+    // background-color: linear-gradient( to left right,#B27EFF,#2E63C5);
+}
+.viewImg{
+    height: 170px;
+    width: 170px;
+}
+.overlayEffect{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(left right,#B27EFF,#2E63C5);
+}

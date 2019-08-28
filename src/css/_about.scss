@@ -1,0 +1,16 @@
+.paraColor{
+    color: #666666;
+}
+.aboutIcon{
+    font-size: 70px;
+}
+.aboutdata{
+    transition:all 2s;
+}
+.aboutdata:hover{
+    animation: example 1s;
+}
+@keyframes example {
+    from {transform: scale(0.9);}
+    to {transform: scale(1);}
+  }

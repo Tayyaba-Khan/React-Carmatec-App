@@ -1,0 +1,39 @@
+.mainNav{
+    // border: 1px solid;
+    .container{
+        .navFirstRow{
+            .navFirstRowSeccol{
+                padding: 0;
+                margin: 0;
+                .navFirstRowImg{
+                    height: 100%;
+                    img{
+                        height: 66px;
+                    }
+                }
+                .navFirstBtn{
+                    margin-left: 30px;
+                    background-color: #5d257e;
+                    color: #fff;
+                }
+                .navFirstBtn:hover{
+                    opacity: 0.5;
+                }
+                .navulTopping{
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                    .navdropTopping{
+                        margin-top: 16px;
+                        border-top: 2px solid #5d257e;
+                        .naviconics{
+                            color: #5d257e;
+                        }
+                        .navicondata{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
