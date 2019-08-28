@@ -5,7 +5,7 @@ import Nav from "./Nav/Nav";
 import Home from "./Home/Home";
 import Footer from "./Footer/Footer";
 import Stickyfooter from "./StickyFooter/stickyFooter";
-// import Company from "./About/company";
+import Company from "./About/company";
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
       <Route path="/company-page" component={Company}></Route>
       <Footer/>
       <Stickyfooter/>
-      {/* <Company/> */}
+      <Company/>
     </div>;
   }
 }
